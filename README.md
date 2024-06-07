@@ -1,3 +1,19 @@
+# Meet App
+## Serverless functions
+
+In the Meet App project, serverless functions are leveraged to handle backend tasks without the need for managing server infrastructure.
+
+1. Authentication Server
+    - Instead of deploying and maintaining a traditional backend server for handling user authentication and authorization, serverless functions (specifically AWS Lambda) are used to implement the authentication server. 
+    - The Serverless Framework is used to deploy and manage the serverless functions, enabling easy configuration and deployment.
+
+2. Google Calendar API Integration
+   - Serverless functions are utilized to interface with the Google Calendar API. These functions handle requests to fetch upcoming events from the Google Calendar API.
+
+To ensure security, the serverless functions are protected with appropriate authentication mechanisms, such as OAuth2 for accessing the Google Calendar API and token-based authentication for user authentication and authorization.
+
+
+
 ## Feature 1: Filter Events by City
 ### User story
     As a user,
