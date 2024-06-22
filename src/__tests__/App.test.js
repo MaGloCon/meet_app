@@ -3,7 +3,6 @@ import userEvent from '@testing-library/user-event';
 import { getEvents } from '../API';
 import App from '../App';
 
-
 describe('<App /> component', () => {
   let AppDOM;
   beforeEach(() => {

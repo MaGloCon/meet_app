@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import { getEvents } from '../API';
+import { getEvents } from '../../API';
 
 import userEvent from '@testing-library/user-event';
 
-import Event from '../components/Event';
+import Event from '../../components/Event';
 
 
 
@@ -37,7 +37,7 @@ describe('<Event /> component', () => {
     test('event details hidden by default', () => {
         expect(EventComponent.container.querySelector('.details')).not.toBeInTheDocument();
     });
-
+    
     test('shows details section when the user clicks on (show details) button', async () => {
         const user = userEvent.setup();
         await user.click(EventComponent.queryByText('show details'));

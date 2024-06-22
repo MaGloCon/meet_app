@@ -1,8 +1,8 @@
 import { render, within, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import CitySearch from '../components/CitySearch';
-import { extractLocations, getEvents } from '../API.js';
-import App from '../App';
+import CitySearch from '../../components/CitySearch.js';
+import { extractLocations, getEvents } from '../../API.js';
+import App from '../../App.js';
 
 describe('<CitySearch /> component', () => {
   let CitySearchComponent;
