@@ -58,14 +58,14 @@ const fetchLocations = async () => {
 
   return (
     <div className="App">
-      <h1>Meet App</h1>
-      <p>Choose your nearest city</p>
       <div className="alerts-container">
         {infoAlert.length ? <InfoAlert text={infoAlert}/> : null}
         {errorAlert.length ? <ErrorAlert text={errorAlert}/> : null}
         {warningAlert.length ? <WarningAlert text={warningAlert}/> : null}
       </div>
       <div className="App-header">
+        <h1>Meet App</h1>
+        <p>Choose your nearest city</p>
         <CitySearch 
           allLocations={allLocations} 
           setCurrentCity={setCurrentCity}
